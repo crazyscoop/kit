@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	amqptransport "github.com/go-kit/kit/transport/amqp"
+	amqptransport "github.com/crazyscoop/kit/transport/amqp"
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 

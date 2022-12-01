@@ -5,7 +5,7 @@ import (
 	"errors"
 
 	stdcasbin "github.com/casbin/casbin/v2"
-	"github.com/go-kit/kit/endpoint"
+	"github.com/crazyscoop/kit/endpoint"
 )
 
 type contextKey string

@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/go-kit/kit/endpoint"
+	"github.com/crazyscoop/kit/endpoint"
 	"github.com/golang-jwt/jwt/v4"
 )
 

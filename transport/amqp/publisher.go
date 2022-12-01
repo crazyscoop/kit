@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/go-kit/kit/endpoint"
+	"github.com/crazyscoop/kit/endpoint"
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 

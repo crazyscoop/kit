@@ -8,7 +8,7 @@ import (
 	"github.com/opentracing/opentracing-go/mocktracer"
 	"google.golang.org/grpc/metadata"
 
-	kitot "github.com/go-kit/kit/tracing/opentracing"
+	kitot "github.com/crazyscoop/kit/tracing/opentracing"
 	"github.com/go-kit/log"
 )
 

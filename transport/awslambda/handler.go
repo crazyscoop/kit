@@ -3,8 +3,8 @@ package awslambda
 import (
 	"context"
 
-	"github.com/go-kit/kit/endpoint"
-	"github.com/go-kit/kit/transport"
+	"github.com/crazyscoop/kit/endpoint"
+	"github.com/crazyscoop/kit/transport"
 	"github.com/go-kit/log"
 )
 

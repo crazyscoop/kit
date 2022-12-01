@@ -6,8 +6,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/go-kit/kit/sd"
-	"github.com/go-kit/kit/sd/internal/instance"
+	"github.com/crazyscoop/kit/sd"
+	"github.com/crazyscoop/kit/sd/internal/instance"
 	"github.com/go-kit/log"
 )
 

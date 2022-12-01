@@ -15,9 +15,9 @@ import (
 	"github.com/openzipkin/zipkin-go/propagation/b3"
 	"github.com/openzipkin/zipkin-go/reporter/recorder"
 
-	"github.com/go-kit/kit/endpoint"
-	zipkinkit "github.com/go-kit/kit/tracing/zipkin"
-	kithttp "github.com/go-kit/kit/transport/http"
+	"github.com/crazyscoop/kit/endpoint"
+	zipkinkit "github.com/crazyscoop/kit/tracing/zipkin"
+	kithttp "github.com/crazyscoop/kit/transport/http"
 )
 
 const (

@@ -7,9 +7,9 @@ import (
 
 	consul "github.com/hashicorp/consul/api"
 
-	"github.com/go-kit/kit/sd"
-	"github.com/go-kit/kit/sd/internal/instance"
-	"github.com/go-kit/kit/util/conn"
+	"github.com/crazyscoop/kit/sd"
+	"github.com/crazyscoop/kit/sd/internal/instance"
+	"github.com/crazyscoop/kit/util/conn"
 	"github.com/go-kit/log"
 )
 

@@ -5,9 +5,9 @@ import (
 	"io"
 	"time"
 
-	"github.com/go-kit/kit/endpoint"
-	"github.com/go-kit/kit/sd"
-	"github.com/go-kit/kit/sd/lb"
+	"github.com/crazyscoop/kit/endpoint"
+	"github.com/crazyscoop/kit/sd"
+	"github.com/crazyscoop/kit/sd/lb"
 	"github.com/go-kit/log"
 	"google.golang.org/grpc"
 )

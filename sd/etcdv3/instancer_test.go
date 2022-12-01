@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/go-kit/kit/sd"
+	"github.com/crazyscoop/kit/sd"
 	"github.com/go-kit/log"
 )
 

@@ -8,19 +8,20 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kit/kit/endpoint"
-	"github.com/go-kit/kit/sd"
+	"github.com/crazyscoop/kit/endpoint"
+	"github.com/crazyscoop/kit/sd"
 	"github.com/go-kit/log"
 )
 
 var _ sd.Instancer = (*Cache)(nil) // API check
 
 // The test verifies the following:
-//   registering causes initial notification of the current state
-//   instances are sorted
-//   different update causes new notification
-//   identical notifications cause no updates
-//   no updates after de-registering
+//
+//	registering causes initial notification of the current state
+//	instances are sorted
+//	different update causes new notification
+//	identical notifications cause no updates
+//	no updates after de-registering
 func TestCache(t *testing.T) {
 	e1 := sd.Event{Instances: []string{"y", "x"}} // not sorted
 	e2 := sd.Event{Instances: []string{"c", "a", "b"}}

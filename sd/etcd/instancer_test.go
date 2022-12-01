@@ -6,7 +6,7 @@ import (
 
 	stdetcd "go.etcd.io/etcd/client/v2"
 
-	"github.com/go-kit/kit/sd"
+	"github.com/crazyscoop/kit/sd"
 	"github.com/go-kit/log"
 )
 

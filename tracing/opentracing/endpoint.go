@@ -8,8 +8,8 @@ import (
 	otext "github.com/opentracing/opentracing-go/ext"
 	otlog "github.com/opentracing/opentracing-go/log"
 
-	"github.com/go-kit/kit/endpoint"
-	"github.com/go-kit/kit/sd/lb"
+	"github.com/crazyscoop/kit/endpoint"
+	"github.com/crazyscoop/kit/sd/lb"
 )
 
 // TraceEndpoint returns a Middleware that wraps the `next` Endpoint in an

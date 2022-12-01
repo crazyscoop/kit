@@ -6,8 +6,8 @@ import (
 
 	"time"
 
-	"github.com/go-kit/kit/metrics"
-	"github.com/go-kit/kit/metrics/generic"
+	"github.com/crazyscoop/kit/metrics"
+	"github.com/crazyscoop/kit/metrics/generic"
 )
 
 func TestTimerFast(t *testing.T) {

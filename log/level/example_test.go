@@ -4,8 +4,8 @@ import (
 	"errors"
 	"os"
 
-	"github.com/go-kit/kit/log"
-	"github.com/go-kit/kit/log/level"
+	"github.com/crazyscoop/kit/log"
+	"github.com/crazyscoop/kit/log/level"
 )
 
 func Example_basic() {

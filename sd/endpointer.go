@@ -3,7 +3,7 @@ package sd
 import (
 	"time"
 
-	"github.com/go-kit/kit/endpoint"
+	"github.com/crazyscoop/kit/endpoint"
 	"github.com/go-kit/log"
 )
 
