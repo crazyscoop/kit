@@ -20,6 +20,7 @@ type Server struct {
 	dec          DecodeIngressFunc
 	enc          EncodeEgressFunc
 	socketConfig []SocketConfigFunc
+	before       []RequestFunc
 	errorHandler transport.ErrorHandler
 }
 
@@ -45,6 +46,10 @@ func SetSocketConfig(socketConfig ...SocketConfigFunc) ServerOption {
 	return func(s *Server) { s.socketConfig = append(s.socketConfig, socketConfig...) }
 }
 
+func ServerBefore(before ...RequestFunc) ServerOption {
+	return func(s *Server) { s.before = append(s.before, before...) }
+}
+
 func (s Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	ctx := r.Context()
 	conn, err := s.upgrader.Upgrade(w, r, nil)
@@ -53,6 +58,10 @@ func (s Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	s.conn = *conn
+
+	for _, f := range s.before {
+		ctx = f(ctx, r)
+	}
 
 	for _, f := range s.socketConfig {
 		f(ctx, &s.conn)
