@@ -3,6 +3,7 @@ package websocket
 import (
 	"context"
 	"net/http"
+	"time"
 
 	"github.com/crazyscoop/kit/log"
 	"github.com/crazyscoop/kit/transport"
@@ -102,6 +103,7 @@ func (s Server) ingressMessage(ctx context.Context, ingress chan interface{}) {
 		if err != nil {
 			return
 		}
+		s.conn.SetReadDeadline(time.Now().Add(time.Second * 10))
 		ingress <- req
 	}
 }
